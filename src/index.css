@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+}
+:root {
+  --color1: #e6c744;
+  --color2: #ffffff;
+  --color3: #000000;
+  --color4: #c2c8da;
+}
+:root {
+  --input-padding: 7px 12px;
+  --input-bg-color: var(--color4);
+  --input-border-bottom: 2px solid var(--color4);
+  --input-margin: 2px 0px;
+  --input-outline: none;
+}
+:root {
+  --button-padding: 14px 0;
+  --button-width: 11.7rem;
+}

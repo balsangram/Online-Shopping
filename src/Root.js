@@ -1,0 +1,16 @@
+export { default as Banner } from "./components/Banner";
+export { default as BigBanner } from "./components/BigBanner";
+export { default as Card } from "./components/Card";
+export { default as Categories } from "./components/Categories";
+export { default as Footer } from "./components/Footer";
+export { default as Limited } from "./components/Limited";
+export { default as Nav } from "./components/Nav";
+export { default as TypeProduct } from "./components/TypeProduct";
+export { default as Cart } from "./pages/Cart";
+export { default as CategoriesPage } from "./pages/CategoriesPage";
+export { default as Error } from "./pages/Error";
+export { default as FullCard } from "./pages/FullCard";
+export { default as Login_Reg } from "./pages/Login_Reg";
+export { default as Login } from "./pages/Login";
+export { default as Regestation } from "./pages/Regestation";
+export { default as Home } from "./pages/Home";
