@@ -10,7 +10,6 @@ import {
   Login_Reg,
   Nav,
 } from "./Root";
-
 function App() {
   return (
     <>

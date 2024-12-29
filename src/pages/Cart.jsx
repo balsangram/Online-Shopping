@@ -36,6 +36,7 @@ function Cart() {
           <Card
             key={index}
             img={e.image}
+            card_box={{ width: "18rem" }}
             heading={e.title}
             rateing={e.rating.rate}
             price={e.price}

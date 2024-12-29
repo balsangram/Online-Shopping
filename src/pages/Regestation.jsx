@@ -12,38 +12,19 @@ function Regestation({ showLogin }) {
   };
 
   return (
-    <div style={{ display: "flex" }}>
-      <div className="reg" id="reg">
-        <h1>Regestation</h1>
-        <form onSubmit={registerHandeler()}>
-          <input
-            type="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="name..."
-          />
-          <br />
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="email.."
-          />
-          <br />
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="password..."
-          />
-          <br />
-          <button type="submit">Regestation</button>
-        </form>
-        <p href="" onClick={() => showLogin(false)}>
-          Login
-        </p>
-      </div>
-      <div className="reg_side"></div>
+    <div className="log_reg">
+      <h1> REGESTRATION</h1>
+      <form action="">
+        <input type="text" placeholder="Name" /> <br />
+        <input type="text" placeholder="Email" /> <br />
+        <input type="password" placeholder="Password" />
+        <br />
+        <button>LOGIN</button>
+      </form>
+      <hr className="login_hr" />
+      <p className="change" onClick={() => showLogin(false)}>
+        REGESTRATION
+      </p>
     </div>
   );
 }

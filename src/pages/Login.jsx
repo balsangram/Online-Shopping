@@ -28,34 +28,21 @@ function Login({ showregister }) {
       });
   };
   return (
-    <div style={{ display: "flex" }}>
-      <div className="side_log"></div>
-      <div className="log" id="log">
-        <h1>Login</h1>
-        <form onSubmit={loginHandel}>
-          <input
-            value={user}
-            onChange={(e) => setUser(e.target.value)}
-            type="text"
-            placeholder="name... "
-          />
+    <>
+      <div className="log_reg">
+        <h1>LOGIN</h1>
+        <form action="">
+          <input type="text" placeholder="Email" /> <br />
+          <input type="password" placeholder="Password" />
           <br />
-          <input
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            type="password"
-            placeholder="password..."
-            autoComplete="off"
-          />
-          {worning && <p>{worning}</p>}
-          <br />
-          <button type="submit">Login</button>
+          <button>LOGIN</button>
         </form>
+        <hr className="login_hr" />
         <p href="" onClick={() => showregister(true)}>
-          Register
+          REGESTRATION
         </p>
       </div>
-    </div>
+    </>
   );
 }
 
