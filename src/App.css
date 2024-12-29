@@ -81,20 +81,21 @@
 
 /* card========================================= */
 .card {
-  height: 22rem;
+  /* height: 22rem; */
   width: 15rem;
   overflow: hidden;
   /* background-color: pink; */
   /* border-radius: 10px; */
   /* padding: 0.2rem; */
-  border: 1px solid var(--color4);
+  /* border: 1px solid var(--color4); */
 }
 .card_img_part {
   border: 1px solid var(--color4);
   /* border: 1px solid; */
   /* background-color: aqua; */
   width: 100%;
-  height: 15rem;
+  /* height: 15rem; */
+  height: 25rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -113,11 +114,12 @@
 }
 .card_heading {
   /* background-color: aqua; */
-  height: 2.8rem;
+  height: 1rem;
   padding: 5px 10px;
-  font-size: 1rem;
+  font-size: .8rem;
   /* font-size: 1rem; */
   overflow: hidden;
+  font-weight: 200;
 }
 .card_R_St {
   display: flex;
@@ -126,10 +128,13 @@
   padding: 7px 0px;
 }
 .card_reating {
-  padding: 0px 10px;
+  /* padding: 0px 10px; */
+  
 }
 .card_price {
   padding: 0px 10px;
+  font-weight: 100;
+  font-size: .7rem;
 }
 .card_btn {
   background-color: var(--color4);
@@ -177,28 +182,28 @@
 nav {
   display: flex;
   align-items: center;
-  background-color: var(--color2);
+  background-color: white;
   padding: 10px 50px;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   box-shadow: 0px 1px 10px var(--color4);
 }
-nav input {
-  width: 70%;
-  /* border-radius: 30px; */
-  padding: 10px 20px;
-  /* border: none; */
-  border: 2px solid var(--color4);
-  outline: none;
-}
 nav .navLink {
   list-style: none;
   text-decoration: none;
+  font-size: 2rem;
   color: var(--color3);
   &:hover {
     color: var(--color1);
   }
+}
+.UserNAme{
+  padding-right: 2rem;
+}
+nav .nav_right{
+  display: flex;
+  align-items: center;
 }
 /* =================fullCard ====================== */
 .fullCard {
@@ -217,11 +222,28 @@ nav .navLink {
   padding-top: 10rem;
 }
 /* =======Limited ==================== */
-.Limited {
+.Limited_outer{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.limited_button{
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+}
+.limited_button button {
+  padding: .5rem .8rem;
+  width: 10rem;
+}
+.Limited {
+  width: 100vw;
+  display: flex;
+  gap: 2rem;
   /* background-color: burlywood; */
   justify-content: space-around;
-  padding: 40px 0;
+  padding: 40px 20px;
+  flex-wrap: wrap;
 }
 /* ==========VeriousCatagores =========== */
 .VeriousCatagores {
@@ -238,6 +260,7 @@ nav .navLink {
 
 /* =========BigBanner============= */
 .BigBanner {
+  /* padding-top: 10rem; */
   height: 100vh;
   background-color: var(--color1);
   background-image: url("/src/images/banner.jpg");
@@ -255,7 +278,7 @@ nav .navLink {
 }
 /* err ===================== */
 .err {
-  height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -270,71 +293,129 @@ nav .navLink {
   padding: 6rem 3rem 3rem;
 }
 /* footer ==================================== */
-body footer {
-  /* height: 20vh; */
-  background-color: black;
-  color: aliceblue;
-  display: flex;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  flex-direction: column;
+footer{
+  padding: 2rem 4rem;
+}
+.footer_buttom{
   text-align: center;
+  font-size: .7rem;
+  line-height: 1rem;
+  padding: 1rem;
+}
+.footer_up {
+width: 60%;
+/* background-color: aqua; */
+}
+.footer_up tr{
 
-  /* align-items: center; */
-  /* justify-content: center; */
 }
-.footerTop {
-  display: flex;
-  padding: 1rem 1rem 0;
+.footer_up th{
+  width: 20rem;
+font-size: .9rem;
+line-height: 2rem;
+text-align: left;
 }
-.footerBottom {
-  padding: 1rem 0 1rem 0;
+.footer_up td{
+  width: 20rem;
+font-size: .7rem;
+line-height: 1.5rem;
 }
-.footerLeft {
-  text-align: left;
-  height: 10rem;
-  display: flex;
-  /* background-color: aqua; */
-  width: 60%;
-  padding-top: 2rem;
-}
-.footerRight {
-  display: flex;
-  /* background-color: blueviolet; */
+.footer_down{
+  line-height: 2rem;
   width: 40%;
-  padding-top: 2rem;
+  /* background-color: aqua; */
 }
-.footerLeft_1 {
-  /* background-color: brown; */
-  /* display: flex; */
-  width: 70%;
-  padding: 0 5%;
+.footer_sign{
+font-size: .9rem;
 }
-.footerLeft_2 {
-  /* background-color: pink; */
-  width: 30%;
-  padding-left: 5%;
+.footer_signUp{
+font-size: .7rem;
 }
-.footerLeft_2 ul li {
-  text-decoration: none;
-  list-style: none;
-}
-.footerRight_1 {
-  /* background-color: red; */
-  width: 50%;
-  text-align: left;
-  padding-left: 5%;
-}
-.footerRight_1 ul li {
-  text-decoration: none;
-  list-style: none;
-}
-.footerRight_2 {
-  /* background-color: gray; */
-  width: 50%;
+.footer_icons{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
+  width: 10rem;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.footer_down
+ input{
+  border: none;
+  border-bottom: 1px solid ;
+}
+/* BigCard ========================================= */
+.BigCard{
+  /* background-color: aquamarine; */
+  min-height:100vh;
+  padding: 20vh 10vh 50vh;
+}
+.total_BigCard{
+display: flex;
+gap: 5rem;
+padding: 0 20rem;
+}
+.BigCard_img{
+  height: 30rem;
+  width: 20rem;
+  
+}
+.BigCard_title{
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.left_BigCard{
+
+}
+.right_BigCard{
+line-height: 2.5rem;
+}
+.BigCard_price{
+font-size: 1.5rem;
+font-style: italic;
+}
+.BigCard_description{
+  line-height: 1.5rem;
+
+}
+.BigCard_category{
+font-weight: bold;
+font-size: 1.8rem;
+text-decoration: underline;
+padding-bottom: 1rem;
+}
+.BigCard_user{
+display: flex;
+gap: 2rem;
+}
+.BigCard_rate{
+
+}
+.BigCard_count{
+
+}
+/* Home========================= */
+.home{
+  min-height: 100vh;
+}
+.Home_deading{
+  text-align: center;
+  /* background-color: aqua; */
+  width: 100vw;
+  padding: 4rem 0 3rem;
+  /* text-decoration: underline; */
+}
+.home_button{
+  /* background-color: aqua; */
+  /* margin: 20rem; */
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
+}
+.home_button button{
+  padding: .5rem .8rem;
+  width: 10rem;
+}
+.home_products{
+  /* background-color: pink; */
+  display: flex;
+  justify-content: space-around;
 }

@@ -3,97 +3,56 @@ import React from "react";
 function Footer() {
   return (
     <>
+    <hr/>
       <footer>
-        <div className="footerTop">
-          <div className="footerLeft">
-            <div className="footerLeft_1">
-              <p>Some thing in about</p>
-              <p>
-                The future of online shopping is exciting, with new technologies
-                and innovations making the experience more personalized,
-                efficient, and sustainable. Whether it's through AI-driven
-                recommendations
-              </p>
-            </div>
-            <div className="footerLeft_2">
-              <ul>
-                <li>Home</li>
-                <li>Categories</li>
-              </ul>
-            </div>
+        <div className="footer_top">
+          <div className="footer_up">
+        <table>
+          <tr>
+            <th>OFFLINE STORE</th>
+            <th>GET TO KNOW US</th>
+            <th>ORDERS</th>
+          </tr>
+          <tr>
+            <td>IND STORES NEAR ME</td>
+            <td>FAQ's</td>
+            <td>TRACK ORDER</td>
+            </tr>
+          <tr>
+            <td></td>
+            <td>Blogs</td>
+            <td>RETURNS/EXCHANGE POLICY</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Terms & Conditions</td>
+            <td></td>
+          </tr>
+
+        </table>
           </div>
-          <div className="footerRight">
-            <div className="footerRight_1">
-              <ul>
-                <li>Help</li>
-                <li>Contact Us</li>
-                <li>About Us</li>
-                <li>Our Blogs</li>
-              </ul>
-            </div>
-            <div className="footerRight_2">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                width="24"
-                height="24"
-                strokeWidth="2"
-              >
-                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                width="24"
-                height="24"
-                strokeWidth="2"
-              >
-                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                <path d="M16.5 7.5l0 .01"></path>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                width="24"
-                height="24"
-                strokeWidth="2"
-              >
-                <path d="M12 10.174c1.766 -2.784 3.315 -4.174 4.648 -4.174c2 0 3.263 2.213 4 5.217c.704 2.869 .5 6.783 -2 6.783c-1.114 0 -2.648 -1.565 -4.148 -3.652a27.627 27.627 0 0 1 -2.5 -4.174z"></path>
-                <path d="M12 10.174c-1.766 -2.784 -3.315 -4.174 -4.648 -4.174c-2 0 -3.263 2.213 -4 5.217c-.704 2.869 -.5 6.783 2 6.783c1.114 0 2.648 -1.565 4.148 -3.652c1 -1.391 1.833 -2.783 2.5 -4.174z"></path>
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                width="24"
-                height="24"
-                strokeWidth="2"
-              >
-                <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
-                <path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"></path>
-              </svg>
+
+          <div className="footer_down">
+            <p className="footer_sign">SIGN UP AND SAVE</p>
+            <p className="footer_signUp">Sign up now and be the first to know about exclusive offers, latest fashion trends & style tips!</p>
+            <input type="text" placeholder="Enter your email"/>
+            <div className="footer_icons">
+            <svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="30" viewBox="0 5 1036 990" id="linkedin">
+  <path d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"></path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="30" viewBox="0 5 1036 990" id="linkedin">
+  <path d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"></path>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="5rem" height="30" viewBox="0 5 1036 990" id="linkedin">
+  <path d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"></path>
+</svg>
+
             </div>
           </div>
         </div>
-        <div className="footerBottom">
-          <hr />
-          <p>© 2024,Mango.com</p>
+        <div className="footer_buttom">
+          <p>© 2024 MAYA</p>
+          <p>Made in India, for the World 🌍</p>
         </div>
       </footer>
     </>

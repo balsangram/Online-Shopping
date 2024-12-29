@@ -39,9 +39,9 @@ function Regestation({ showLogin }) {
           <br />
           <button type="submit">Regestation</button>
         </form>
-        <a href="" onClick={() => showLogin(false)}>
+        <p href="" onClick={() => showLogin(false)}>
           Login
-        </a>
+        </p>
       </div>
       <div className="reg_side"></div>
     </div>

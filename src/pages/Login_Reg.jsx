@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { Login, Regestation } from "../Root";
 function Login_Reg() {
-  const [show, setShow] = useState();
-  useEffect(() => {
-    setShow(false);
-  }, []);
+  const [show, setShow] = useState(true);
+  // useEffect(() => {
+  //   setShow();
+  // }, []);
   console.log(show);
   return (
     <>

@@ -4,30 +4,48 @@ import axios from "axios";
 
 function Limited() {
   const [result, setResult] = useState([]);
+  let [link , setLink] = useState(true);
+  let url1 = "https://fakestoreapi.com/products?limit=5";
+  let url2 = "https://fakestoreapi.com/products?sort=desc";
   const letitedProduct = () => {
-    axios.get("https://fakestoreapi.com/products?limit=5").then((e) => {
+    axios.get(link ? url1 : url2).then((e) => {
       // console.log(e.data);
       setResult(e.data);
     });
   };
   useEffect(() => {
     letitedProduct();
-  }, []);
+  }, [link]);
   return (
-    <div className="Limited">
-      {result.map((e) => {
-        console.log(e);
+    <div className="Limited_outer">
+      <div className="limited_button">
+         <button >NEW DROPS</button>
+        <button >MOST TRENDING</button>
+        {/* <button onClick={setLink(true)}>NEW DROPS</button>
+        <button onClick={setLink(false)}>MOST TRENDING</button> */}
+      </div>
+      <div className="Limited">  
+      {result.slice(0, 5).map((e , index) => {
+        // console.log(e);
         return (
-          <Card
-            imgStyle={{ height: "25rem" }}
+          <>
+             <Card
+          key={index}
+            // imgStyle={{ height: "25rem" }}
             img={e.image}
             heading={e.title}
-            rateing={e.rating.count}
+            // rateing={e.rating.count}
             price={e.price}
+            // btnStyle={{display:"  none"}}
           />
+          </>
         );
       })}
-      {/* <Card /> */}
+         </div>
+      <div className="limited_button">
+        <button>VIEW ALL</button>
+      </div>
+
     </div>
   );
 }

@@ -3,7 +3,7 @@ import React from "react";
 function BigBanner() {
   return (
     <>
-      <div className="BigBanner">BigBanner</div>
+      <div className="BigBanner"></div>
     </>
   );
 }

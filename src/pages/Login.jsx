@@ -51,9 +51,9 @@ function Login({ showregister }) {
           <br />
           <button type="submit">Login</button>
         </form>
-        <a href="" onClick={() => showregister(true)}>
+        <p href="" onClick={() => showregister(true)}>
           Register
-        </a>
+        </p>
       </div>
     </div>
   );

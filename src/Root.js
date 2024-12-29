@@ -14,3 +14,4 @@ export { default as Login_Reg } from "./pages/Login_Reg";
 export { default as Login } from "./pages/Login";
 export { default as Regestation } from "./pages/Regestation";
 export { default as Home } from "./pages/Home";
+export { default as BigCard} from "./pages/BigCard";
