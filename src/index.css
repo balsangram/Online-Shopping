@@ -5,13 +5,15 @@
 }
 body {
   position: relative;
+  overflow-x: hidden;
+  width: 100vw;
 }
 :root {
-  --color1: #160F29;
-  --color2: #246A73;
-  --color3: #368F8B;
-  --color4: #F3DFC1;
-  --color5: #DDBEA8;
+  --color1: #160f29;
+  --color2: #246a73;
+  --color3: #368f8b;
+  --color4: #f3dfc1;
+  --color5: #ddbea8;
 }
 :root {
   --input-padding: 7px 12px;

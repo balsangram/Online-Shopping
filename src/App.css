@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
-  padding: 5rem 0 15rem;
+  /* padding: 5rem 0 15rem; */
+  /* background-color: aqua; */
 }
 
 /* login =======================================  */
@@ -72,13 +73,9 @@
 
 /* card========================================= */
 .card {
-  /* height: 22rem; */
   width: 15rem;
+  /* background-color: aqua; */
   overflow: hidden;
-  /* background-color: pink; */
-  /* border-radius: 10px; */
-  /* padding: 0.2rem; */
-  /* border: 1px solid var(--color4); */
   color: #000000;
   text-decoration: none;
 }
@@ -155,13 +152,25 @@
 }
 
 /* Categories ======================================== */
+
 .categories_Container {
+  position: absolute;
   width: 20rem;
+  z-index: 2;
   padding: 10px;
-  /* height: 100vh; */
+  min-height: 100vh;
   padding-top: 5rem;
+  background-color: rgb(232, 236, 235);
+  left: 0;
+  transition: 1s;
+}
+.categories_Container_left {
+  position: absolute;
+  left: -17rem;
+  /* background-color: #cbcbcb; */
 }
 .single_catagories {
+  width: 15rem;
   /* background-color: aliceblue; */
   margin: 10px 0;
   padding: 10px 20px;
@@ -187,15 +196,14 @@ nav {
   box-shadow: 0px 1px 10px rgb(236, 229, 229);
   z-index: 5;
 }
-.small_nav {
-  width: 30%;
-  text-align: center;
-}
+
 nav .navLink {
   list-style: none;
   text-decoration: none;
   font-size: 2rem;
   color: black;
+  padding: 0 1rem;
+  display: flex;
 }
 .UserNAme {
   padding-right: 2rem;
@@ -244,13 +252,16 @@ nav .nav_right {
   }
 }
 .Limited {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   gap: 2rem;
+  height: 35rem;
   /* background-color: burlywood; */
   justify-content: space-around;
-  padding: 40px 20px;
-  flex-wrap: wrap;
+  padding: 40px 100px;
+  /* flex-wrap: wrap; */
+  /* overflow-x: scroll; */
+  width: 100%;
 }
 .limited_btns {
   padding: 0.5rem;
@@ -267,13 +278,19 @@ nav .nav_right {
 }
 /* .=====================TypeProduct========= */
 .TypeProduct {
+  position: absolute;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   margin: 2rem;
   padding-top: 5rem;
-  width: 80vw;
+  /* width: 80vw; */
   padding-left: 2rem;
+  /* height: 100vh; */
+  /* overflow: hidden; */
+  z-index: -1;
+  /* overflow-y: scroll; */
+  min-height: 100vh;
 }
 
 /* =========BigBanner============= */
@@ -320,14 +337,20 @@ nav .nav_right {
   /* height: 30rem; */
   /* background-color: var(--color1); */
   /* display: flex; */
-  padding: 5rem;
+  /* padding: 5rem 0; */
   text-align: center;
+  /* overflow-x: scroll; */
+  /* width: 100%; */
+}
+.banner h1 {
+  padding: 4rem 0 3rem;
 }
 .specal_all_cards {
-  padding-top: 3rem;
+  padding: 20px;
   display: flex;
   gap: 2rem;
-  justify-content: center;
+  margin: auto;
+  justify-content: space-around;
 }
 .specal_image {
   height: 30rem;
@@ -341,6 +364,9 @@ nav .nav_right {
 /* ==CategoriesPage=================== */
 .CategoriesPage {
   display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
 /* err ===================== */
 .err {
@@ -360,7 +386,10 @@ nav .nav_right {
 }
 /* footer ==================================== */
 footer {
+  /* position: absolute; */
   padding: 2rem 4rem;
+  z-index: 1;
+  background-color: #fff;
 }
 .footer_buttom {
   text-align: center;
@@ -371,8 +400,6 @@ footer {
 .footer_up {
   width: 60%;
   /* background-color: aqua; */
-}
-.footer_up tr {
 }
 .footer_up th {
   width: 20rem;
@@ -415,7 +442,7 @@ footer {
 .total_BigCard {
   display: flex;
   gap: 5rem;
-  padding: 0 20rem;
+  padding: 0 20%;
 }
 .BigCard_img {
   height: 30rem;
@@ -478,6 +505,10 @@ footer {
   /* background-color: pink; */
   display: flex;
   justify-content: space-around;
+  height: 30rem;
+  /* overflow-x: scroll; */
+  padding: 20px;
+  gap: 2rem;
 }
 .home_btn {
   background-color: rgb(255, 255, 255);

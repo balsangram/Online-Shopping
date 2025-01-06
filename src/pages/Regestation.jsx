@@ -1,20 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 function Regestation({ showLogin }) {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const registerHandeler = () => {
-    console.log("success");
-    // useState("");
-    // setEmail("");
-    // setPassword("");
-  };
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  // const registerHandeler = () => {
+  // console.log("success");
+  // useState("");
+  // setEmail("");
+  // setPassword("");
+  // };
 
   return (
     <div className="log_reg">
       <h1> REGESTRATION</h1>
-      <form action="">
+      <form action="" autoComplete="off">
         <input type="text" placeholder="Name" /> <br />
         <input type="text" placeholder="Email" /> <br />
         <input type="password" placeholder="Password" />

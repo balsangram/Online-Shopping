@@ -1,25 +1,30 @@
 import React from "react";
-import pimg from "../images/product.jpg";
-import { Link } from "react-router-dom";
+// import pimg from "../images/product.jpg";
+// import { Link } from "react-router-dom";
 
 function Card({
   img,
   heading,
-  description,
-  rateing,
+  // description,
+  // rateing,
   price,
   imgStyle,
-  btnStyle,
+  // btnStyle,
   card_box,
   card_img,
 }) {
   // function bigCard() {
   //   console.log("click card");
-
   // }
+
   return (
     <>
-      <Link to={"/BigCard"} className="card" style={card_box}>
+      <div
+        className="card"
+        style={card_box}
+        // onClick={() => bigCard}
+      >
+        <div></div>
         <div className="card_img_part" style={imgStyle}>
           <img className="card_img" style={card_img} src={img} alt="Product" />
         </div>
@@ -38,7 +43,7 @@ function Card({
             </button> */}
           </div>
         </div>
-      </Link>
+      </div>
     </>
   );
 }

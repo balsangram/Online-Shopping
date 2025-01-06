@@ -1,11 +1,13 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Banner, BigBanner, Card, Limited } from "../Root";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Home() {
-  const [details, setDetails] = useState([]);
+  const navigate = useNavigate();
 
+  const [details, setDetails] = useState([]);
+  // const [id, setId] = useState();
   const cat = async () => {
     axios.get("https://fakestoreapi.com/products/categories").then((res) => {
       // console.log(res.data);
@@ -14,7 +16,7 @@ function Home() {
           .get(`https://fakestoreapi.com/products/category/${e}`)
           .then((response) => {
             setDetails((det) => {
-              // console.log("Each data" , det);
+              console.log("Each data", det);
               return [...det, { categoryname: e, data: response.data }];
             });
           });
@@ -51,14 +53,21 @@ function Home() {
                     <div className="home_products">
                       {e.data.slice(0, 4).map((ele, indexno) => {
                         return (
-                          <Card
-                            key={indexno}
-                            card_box={{ width: "21%" }}
-                            img={ele.image}
-                            card_img={{ height: "20rem", width: "16rem" }}
-                            heading={ele.title}
-                            price={ele.price}
-                          />
+                          <div
+                            onClick={() => {
+                              // setId(ele.id);
+                              navigate("/BigCard", { state: ele.id });
+                            }}
+                          >
+                            <Card
+                              key={indexno}
+                              card_box={{ width: "20rem" }}
+                              img={ele.image}
+                              card_img={{ height: "20rem", width: "16rem" }}
+                              heading={ele.title}
+                              price={ele.price}
+                            />
+                          </div>
                         );
                       })}
                     </div>
